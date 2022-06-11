@@ -1,0 +1,19 @@
+{
+    "appService.defaultWebAppToDeploy": "None",
+    "workbench.colorCustomizations": {//Styles used for backend projects
+        "activityBar.activeBackground": "#4889f7",
+        "activityBar.activeBorder": "#ffffff",
+        "activityBar.background": "#2e58a0",
+        "activityBar.foreground": "#ffffff",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#fff",
+        "activityBarBadge.foreground": "#000",
+        "statusBar.background": "#2e58a0",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#4889f7",
+        // "titleBar.activeBackground": "#68217a",
+        // "titleBar.activeForeground": "#e7e7e7",
+        // "titleBar.inactiveBackground": "#68217a99",
+        // "titleBar.inactiveForeground": "#e7e7e799"
+      }
+}
