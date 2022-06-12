@@ -6,6 +6,7 @@ const port = app.get("port");
 const server = http.createServer(app);
 
 require("./routes/fase-grupos.routes")(app);
+require("./routes/user.routes")(app);
 
 server.listen(port, async () => {
 

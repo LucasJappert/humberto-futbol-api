@@ -1,9 +1,10 @@
+//TODO: Por el momento no lo utilizaríamos
 const { ObjectResult } = require('../helpers/objectResult');
 const { body, validationResult } = require('express-validator');
 const fileManager = require("../services/fileManager.service");
 
 
-exports.getFaseGrupos = async (req, res) => {
+exports.login = async (req, res) => {
     const {anio, categoria} = req.params;
     let result = null;
     try{
@@ -19,12 +20,13 @@ exports.getFaseGrupos = async (req, res) => {
     ObjectResult.SendOk(res, result);
 };
 
-// exports.validate = (method) => {
-//     switch (method) {
-//         case "getFaseGrupos": {
-//             return [
-//                 body("Nick", "Nick doesn't exists").exists(),
-//             ]
-//         }
-//     }
-// }
+exports.validate = (method) => {
+    switch (method) {
+        case "login": {
+            return [
+                body("Nick", "Nick doesn't exists").exists(),
+                body("Pass", "Nick doesn't exists").exists()
+            ]
+        }
+    }
+}
