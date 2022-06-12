@@ -5,7 +5,7 @@ const http = require("http");
 const port = app.get("port");
 const server = http.createServer(app);
 
-// require("./routes/user.routes")(app);
+require("./routes/fase-grupos.routes")(app);
 
 server.listen(port, async () => {
 

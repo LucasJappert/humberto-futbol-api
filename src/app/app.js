@@ -19,5 +19,6 @@ app.use((req, res, next) => {
 app.get("/", (req, res) => {
     res.status(200).json(`Hello ${process.env.NODE_ENV}! App versión: ${pkg.version}`);
 });
+
 module.exports = app;
 
