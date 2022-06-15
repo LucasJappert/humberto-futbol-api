@@ -9,15 +9,9 @@ require("./routes/fase-grupos.routes")(app);
 require("./routes/user.routes")(app);
 
 server.listen(port, async () => {
-
-    // const CacheManager = require("./services/cacheManager");
-    // (async () => {
-    //     await CacheManager.InitializeCacheAsync();
-    //     require("./services/socketManager")(server);
-    //     NotificationsProcess.StartProcess();
-    // })();
-
     Log.BgGreen(`Servidor corriendo en http://localhost:${port}`);
 });
+
+
 
 
