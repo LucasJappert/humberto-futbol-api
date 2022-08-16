@@ -7,7 +7,8 @@ exports.getFaseGrupos = async (req, res) => {
     const {anio, categoria} = req.params;
     let result = null;
 
-    result = FileManager.GetFile(`${FileManager.ABSOLUTE_PATH_JSONS}/fase-grupos-${anio}-${categoria}.json`);
+    //TODO: Almacenar en cache
+    result = FileManager.GetFile(`${FileManager.ABSOLUTE_PATH_JSONS}/zona-${anio}-${categoria}.json`);
 
     if (result == null){
         ObjectResult.SendNotFound(res, { message: `Json no encontrado para el año:${anio} y categría:${categoria}` });

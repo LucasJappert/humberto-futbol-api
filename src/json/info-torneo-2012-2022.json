@@ -1,0 +1,254 @@
+{
+    "zonas": [
+        {
+            "nombre": "Grupo 1",
+            "partidos": [
+                {
+                    "Fecha": "",
+                    "Cancha": "",
+                    "NombreEquipo1": "9 DE JULIO",
+                    "GolesEquipo1": 2,
+                    "NombreEquipo2": "ACADEMIA S.C.",
+                    "GolesEquipo2": 0,
+                    "Estado": 0
+                },
+                {
+                    "Fecha": "",
+                    "Cancha": "",
+                    "NombreEquipo1": "9 DE JULIO",
+                    "GolesEquipo1": 0,
+                    "NombreEquipo2": "ACADEMIA S.C.",
+                    "GolesEquipo2": 0,
+                    "Estado": 0
+                },
+                {
+                    "Fecha": "",
+                    "Cancha": "",
+                    "NombreEquipo1": "9 DE JULIO",
+                    "GolesEquipo1": 0,
+                    "NombreEquipo2": "ACADEMIA S.C.",
+                    "GolesEquipo2": 0,
+                    "Estado": 0
+                },
+                {
+                    "Fecha": "",
+                    "Cancha": "",
+                    "NombreEquipo1": "9 DE JULIO",
+                    "GolesEquipo1": 0,
+                    "NombreEquipo2": "ACADEMIA S.C.",
+                    "GolesEquipo2": 0,
+                    "Estado": 0
+                },
+                {
+                    "Fecha": "",
+                    "Cancha": "",
+                    "NombreEquipo1": "9 DE JULIO",
+                    "GolesEquipo1": 0,
+                    "NombreEquipo2": "ACADEMIA S.C.",
+                    "GolesEquipo2": 0,
+                    "Estado": 0
+                },
+                {
+                    "Fecha": "",
+                    "Cancha": "",
+                    "NombreEquipo1": "9 DE JULIO",
+                    "GolesEquipo1": 0,
+                    "NombreEquipo2": "ACADEMIA S.C.",
+                    "GolesEquipo2": 0,
+                    "Estado": 0
+                }
+            ]
+        },
+        {
+            "nombre": "Grupo 2",
+            "partidos": [
+                {
+                    "Fecha": "",
+                    "Cancha": "",
+                    "NombreEquipo1": "9 DE JULIO",
+                    "GolesEquipo1": 0,
+                    "NombreEquipo2": "ACADEMIA S.C.",
+                    "GolesEquipo2": 0,
+                    "Estado": 0
+                },
+                {
+                    "Fecha": "",
+                    "Cancha": "",
+                    "NombreEquipo1": "9 DE JULIO",
+                    "GolesEquipo1": 0,
+                    "NombreEquipo2": "ACADEMIA S.C.",
+                    "GolesEquipo2": 0,
+                    "Estado": 0
+                },
+                {
+                    "Fecha": "",
+                    "Cancha": "",
+                    "NombreEquipo1": "9 DE JULIO",
+                    "GolesEquipo1": 0,
+                    "NombreEquipo2": "ACADEMIA S.C.",
+                    "GolesEquipo2": 0,
+                    "Estado": 0
+                },
+                {
+                    "Fecha": "",
+                    "Cancha": "",
+                    "NombreEquipo1": "9 DE JULIO",
+                    "GolesEquipo1": 0,
+                    "NombreEquipo2": "ACADEMIA S.C.",
+                    "GolesEquipo2": 0,
+                    "Estado": 0
+                },
+                {
+                    "Fecha": "",
+                    "Cancha": "",
+                    "NombreEquipo1": "9 DE JULIO",
+                    "GolesEquipo1": 0,
+                    "NombreEquipo2": "ACADEMIA S.C.",
+                    "GolesEquipo2": 0,
+                    "Estado": 0
+                },
+                {
+                    "Fecha": "",
+                    "Cancha": "",
+                    "NombreEquipo1": "9 DE JULIO",
+                    "GolesEquipo1": 0,
+                    "NombreEquipo2": "ACADEMIA S.C.",
+                    "GolesEquipo2": 0,
+                    "Estado": 0
+                }
+            ]
+        },
+        {
+            "nombre": "Grupo 3",
+            "partidos": [
+                {
+                    "Fecha": "",
+                    "Cancha": "",
+                    "NombreEquipo1": "9 DE JULIO",
+                    "GolesEquipo1": 0,
+                    "NombreEquipo2": "ACADEMIA S.C.",
+                    "GolesEquipo2": 0,
+                    "Estado": 0
+                },
+                {
+                    "Fecha": "",
+                    "Cancha": "",
+                    "NombreEquipo1": "9 DE JULIO",
+                    "GolesEquipo1": 0,
+                    "NombreEquipo2": "ACADEMIA S.C.",
+                    "GolesEquipo2": 0,
+                    "Estado": 0
+                },
+                {
+                    "Fecha": "",
+                    "Cancha": "",
+                    "NombreEquipo1": "9 DE JULIO",
+                    "GolesEquipo1": 0,
+                    "NombreEquipo2": "ACADEMIA S.C.",
+                    "GolesEquipo2": 0,
+                    "Estado": 0
+                },
+                {
+                    "Fecha": "",
+                    "Cancha": "",
+                    "NombreEquipo1": "9 DE JULIO",
+                    "GolesEquipo1": 0,
+                    "NombreEquipo2": "ACADEMIA S.C.",
+                    "GolesEquipo2": 0,
+                    "Estado": 0
+                },
+                {
+                    "Fecha": "",
+                    "Cancha": "",
+                    "NombreEquipo1": "9 DE JULIO",
+                    "GolesEquipo1": 0,
+                    "NombreEquipo2": "ACADEMIA S.C.",
+                    "GolesEquipo2": 0,
+                    "Estado": 0
+                },
+                {
+                    "Fecha": "",
+                    "Cancha": "",
+                    "NombreEquipo1": "9 DE JULIO",
+                    "GolesEquipo1": 0,
+                    "NombreEquipo2": "ACADEMIA S.C.",
+                    "GolesEquipo2": 0,
+                    "Estado": 0
+                }
+            ]
+        }
+    ],
+    "cuartos": {
+        "partidos": [
+            {
+                "Fecha": "",
+                "Cancha": "",
+                "NombreEquipo1": "9 DE JULIO",
+                "GolesEquipo1": 0,
+                "NombreEquipo2": "ACADEMIA S.C.",
+                "GolesEquipo2": 0,
+                "Estado": 0
+            },
+            {
+                "Fecha": "",
+                "Cancha": "",
+                "NombreEquipo1": "9 DE JULIO",
+                "GolesEquipo1": 0,
+                "NombreEquipo2": "ACADEMIA S.C.",
+                "GolesEquipo2": 0,
+                "Estado": 0
+            },
+            {
+                "Fecha": "",
+                "Cancha": "",
+                "NombreEquipo1": "9 DE JULIO",
+                "GolesEquipo1": 0,
+                "NombreEquipo2": "ACADEMIA S.C.",
+                "GolesEquipo2": 0,
+                "Estado": 0
+            },
+            {
+                "Fecha": "",
+                "Cancha": "",
+                "NombreEquipo1": "9 DE JULIO",
+                "GolesEquipo1": 0,
+                "NombreEquipo2": "ACADEMIA S.C.",
+                "GolesEquipo2": 0,
+                "Estado": 0
+            }
+        ]
+    },
+    "semi":{
+        "partidos":[
+            {
+                "Fecha": "",
+                "Cancha": "",
+                "NombreEquipo1": "9 DE JULIO",
+                "GolesEquipo1": 0,
+                "NombreEquipo2": "ACADEMIA S.C.",
+                "GolesEquipo2": 0,
+                "Estado": 0
+            },
+            {
+                "Fecha": "",
+                "Cancha": "",
+                "NombreEquipo1": "9 DE JULIO",
+                "GolesEquipo1": 0,
+                "NombreEquipo2": "ACADEMIA S.C.",
+                "GolesEquipo2": 0,
+                "Estado": 0
+            }
+        ]
+    },
+    "final":{
+        "partido":{
+            "Fecha": "",
+            "Cancha": "",
+            "NombreEquipo1": "9 DE JULIO",
+            "GolesEquipo1": 0,
+            "NombreEquipo2": "ACADEMIA S.C.",
+            "GolesEquipo2": 0,
+            "Estado": 0
+        }
+    }
+}
