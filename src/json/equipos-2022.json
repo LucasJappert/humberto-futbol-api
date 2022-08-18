@@ -6,7 +6,21 @@
                 {
                     "año": 2013,
                     "numeroSorteo": 0
-                },
+                }
+            ]
+        },
+        {
+            "nombre": "9 DE JULIO ROJO",
+            "categorias":[
+                {
+                    "año": 2015,
+                    "numeroSorteo": 0
+                }
+            ]
+        },
+        {
+            "nombre": "9 DE JULIO BLANCO",
+            "categorias":[
                 {
                     "año": 2015,
                     "numeroSorteo": 0
@@ -448,6 +462,10 @@
                 },
                 {
                     "año": 2014,
+                    "numeroSorteo": 0
+                },
+                {
+                    "año": 2015,
                     "numeroSorteo": 0
                 }
             ]
