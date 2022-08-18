@@ -7,9 +7,9 @@ GET http://localhost:2000/api/info-torneo/2022/2012
 Content-Type: application/json
 
 ###
-GET http://localhost:2000/api/info-torneo/create/2022/2012
+GET http://localhost:2000/api/info-torneo/create/2022/2013
 Content-Type: application/json
 
 ###
-GET http://localhost:2000/api/fase-grupos/2022/2012
+GET http://localhost:2000/api/fase-grupos/2022/2013
 Content-Type: application/json
