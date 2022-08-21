@@ -20,16 +20,28 @@ exports.createZona = async (req, res) => {
     const {anio, categoria} = req.params;
 
     let equiposDeUnaCategoria = Equipos.GetEquiposByCategoria(anio, categoria);
+    if(equiposDeUnaCategoria.length % 4 != 0 ){
+        ObjectResult.SendNotFound(res, {});//TODO: testear con una categoria que tenga 13 equipos.
+        return;
+    }
 
+    const equiposSinNumeroSorteo = equiposDeUnaCategoria.find(x => x.numeroSorteo == 0);
+    if(equiposSinNumeroSorteo){
+        ObjectResult.SendNotFound(res, {});
+        return;
+    }
 
+    const cantidadDeZonas = equiposDeUnaCategoria.length / 4;
+    console.log(cantidadDeZonas);
     let zonas = {};
     equiposDeUnaCategoria.forEach(equipo => {
-        let numeroZona = ((equipo.numeroSorteo - 1) % 3) + 1;
+        let numeroZona = ((equipo.numeroSorteo - 1) % cantidadDeZonas) + 1;
         if(!(numeroZona in zonas)){
             zonas[numeroZona] = [];
         }
         zonas[numeroZona].push(equipo);
     });
+    console.log(zonas);
 
 
     let partidos = {};
