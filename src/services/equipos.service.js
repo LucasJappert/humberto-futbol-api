@@ -4,9 +4,7 @@ const Equipos = () => {};
 
 Equipos.GetEquiposByCategoria = (año, categoria) => {
 
-    const file = FileManager.GetFile(`${FileManager.ABSOLUTE_PATH_JSONS}/equipos-${año}.json`);
-    const json = JSON.parse(file);
-
+    const json = FileManager.GetFile(`${FileManager.ABSOLUTE_PATH_JSONS}/equipos-${año}.json`);
 
     let result = [];
     json.equipos.forEach(equipo => {

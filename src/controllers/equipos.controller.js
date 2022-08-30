@@ -11,6 +11,5 @@ exports.getAll = async (req, res) => {
         return;
     }
 
-    result = JSON.parse(result);
     ObjectResult.SendOk(res, result.equipos);
 };

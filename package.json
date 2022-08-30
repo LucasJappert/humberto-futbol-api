@@ -12,6 +12,9 @@
   "keywords": [],
   "author": "Lucas Jappert",
   "license": "ISC",
+  "nodemonConfig": {
+    "ignore": ["**/json/**"]
+  },
   "dependencies": {
     "bunyan": "^1.8.15",
     "colors": "^1.4.0",

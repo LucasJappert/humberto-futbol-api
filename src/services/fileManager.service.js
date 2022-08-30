@@ -5,6 +5,7 @@ module.exports.ABSOLUTE_PATH_JSONS = `${process.cwd()}/src/json`;
 module.exports.GetFile = (absoluteFilePath) => {
     try {
         let result = fs.readFileSync(absoluteFilePath, { encoding: 'utf8' });
+        result = JSON.parse(result);
         return result;
     } catch (error) {
         console.log(error);
