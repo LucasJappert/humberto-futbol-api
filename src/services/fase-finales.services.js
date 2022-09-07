@@ -32,22 +32,49 @@ FaseFinales.TryGenerateJson = (jsonFaseZonas, anio, categoria) => {
                 diccionarioPosiciones[partido.NombreEquipo2].setData(3, partido.GolesEquipo2, partido.GolesEquipo1);
             }
         });
-        let positions = Object.values(diccionarioPosiciones).sort((a, b) => {
-            if(a.Ptos == b.Ptos){
-                return a.DG < b.DG ? 1 : -1;
-            }
-            return a.Ptos < b.Ptos ? 1 : -1;
-        });
+        let positions = Object.values(diccionarioPosiciones).sort((a, b) => OrdenZona(a, b));
         positionsByGroups.push(positions);
     });
 
-    if(positionsByGroups.length == 4){
+    const CantidadZonasPermitidas = [3, 4];
+    if(CantidadZonasPermitidas.includes(positionsByGroups.length)){
         let faseFinal = new FaseFinal(categoria, anio);
-        faseFinal.SetMe(positionsByGroups);
-        const originalFileName = `${FileManager.ABSOLUTE_PATH_JSONS}/fase-finales/${anio}-${categoria}.json`;
+        let teams = [];
+        if(positionsByGroups.length == 4){
+            teams = [
+                positionsByGroups[0][0].Nombre, positionsByGroups[1][1].Nombre,
+                positionsByGroups[1][0].Nombre, positionsByGroups[0][1].Nombre,
+                positionsByGroups[2][0].Nombre, positionsByGroups[3][1].Nombre,
+                positionsByGroups[3][0].Nombre, positionsByGroups[2][1].Nombre
+            ];
+        }
+        if(positionsByGroups.length == 3){
+            const terceros = positionsByGroups.map(x => x[2]).sort((a, b) => OrdenZona(a, b));
+            teams = [
+                positionsByGroups[0][0].Nombre, terceros[0].Nombre, //1A vs 1°3
+                positionsByGroups[1][1].Nombre, positionsByGroups[2][1].Nombre, //2B vs 2C
+                positionsByGroups[1][0].Nombre, terceros[1].Nombre, //1B vs 2°3
+                positionsByGroups[2][0].Nombre, positionsByGroups[0][1].Nombre //1C vs 2A
+            ];
+        }
+
+        faseFinal.SetMe(teams);
+
         ControlInputsDeGoles(faseFinal);
+
+        const originalFileName = `${FileManager.ABSOLUTE_PATH_JSONS}/fase-finales/${anio}-${categoria}.json`;
         FileManager.WriteFile(originalFileName, faseFinal);
     }
 }
+
+const OrdenZona = (zona1, zona2) => {
+    if(zona1.Ptos == zona2.Ptos){
+        if(zona1.DG == zona2.DG){
+            return zona1.GF < zona2.GF ? 1 : -1;
+        }
+        return zona1.DG < zona2.DG ? 1 : -1;
+    }
+    return zona1.Ptos < zona2.Ptos ? 1 : -1;
+};
 
 module.exports = FaseFinales;

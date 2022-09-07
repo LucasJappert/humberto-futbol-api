@@ -6,18 +6,18 @@ const FaseFinal = function (categoria, anio){
     this.semis = [];
     this.final = {};
     this.tercero = "";
-    this.SetMe = function (resultsGroups) {
-        const [groupA, groupB, groupC, groupD] = [resultsGroups[0], resultsGroups[1], resultsGroups[2], resultsGroups[3]];
-        this.cuartos.push(new Match(groupA[0].Nombre, groupB[1].Nombre));
-        this.cuartos.push(new Match(groupD[0].Nombre, groupC[1].Nombre));
-        this.cuartos.push(new Match(groupB[0].Nombre, groupA[1].Nombre));
-        this.cuartos.push(new Match(groupC[0].Nombre, groupD[1].Nombre));
+    this.SetMe = function (teams) {
+        if(teams.length != 8)
+            throw new Error("Error al iniciar FaseFinal");
 
-        this.semis.push(new Match("Ganador de A", "Ganador de B"));
-        this.semis.push(new Match("Ganador de C", "Ganador de D"));
-
-        this.final = new Match("Ganador de A", "Ganador de B");
+        this.cuartos.push(new Match(teams[0], teams[1]));
+        this.cuartos.push(new Match(teams[2], teams[3]));
+        this.cuartos.push(new Match(teams[4], teams[5]));
+        this.cuartos.push(new Match(teams[6], teams[7]));
+        InternalSetMeAux(this);
     };
+
+
     this.SetMeFromData = function (data) {
         this.cuartos = data.cuartos;
         this.semis = data.semis;
@@ -79,6 +79,12 @@ const FaseFinal = function (categoria, anio){
             this.tercero = "";
     }
 };
+const InternalSetMeAux = (faseFinal) => {
+    faseFinal.semis.push(new Match("Ganador de A", "Ganador de B"));
+    faseFinal.semis.push(new Match("Ganador de C", "Ganador de D"));
+
+    faseFinal.final = new Match("Ganador de A", "Ganador de B");
+}
 
 const ControlInputsDeGoles = (jsonFaseFinal) => {
     ControlPartidos(jsonFaseFinal.cuartos);
