@@ -1,20 +1,33 @@
 const { Match, GetWinnerName, GetLoserName, PreSetEquipo1, PreSetEquipo2 } = require("./match.model");
-const FaseFinal = function (categoria, anio){
+const FaseFinal = function (categoria, anio, tipoCopa){
     this.anio = anio;
     this.categoria = categoria;
     this.cuartos = [];
     this.semis = [];
     this.final = {};
     this.tercero = "";
+    this.tipoCopa = tipoCopa;
     this.SetMe = function (teams) {
-        if(teams.length != 8)
-            throw new Error("Error al iniciar FaseFinal");
+        if(teams.length == 8){
+            //Arranca desde cuartos
+            this.cuartos.push(new Match(teams[0], teams[1]));
+            this.cuartos.push(new Match(teams[2], teams[3]));
+            this.cuartos.push(new Match(teams[4], teams[5]));
+            this.cuartos.push(new Match(teams[6], teams[7]));
 
-        this.cuartos.push(new Match(teams[0], teams[1]));
-        this.cuartos.push(new Match(teams[2], teams[3]));
-        this.cuartos.push(new Match(teams[4], teams[5]));
-        this.cuartos.push(new Match(teams[6], teams[7]));
-        InternalSetMeAux(this);
+            this.semis.push(new Match("Ganador de A", "Ganador de B"));
+            this.semis.push(new Match("Ganador de C", "Ganador de D"));
+
+            this.final = new Match("Ganador de A", "Ganador de B");
+        }else if(teams.length == 4){
+            //Arranca desde semis
+            this.semis.push(new Match(teams[0], teams[1]));
+            this.semis.push(new Match(teams[2], teams[3]));
+
+            this.final = new Match("Ganador de A", "Ganador de B");
+        }else{
+            throw new Error("Error al iniciar FaseFinal");
+        }
     };
 
 
@@ -79,12 +92,6 @@ const FaseFinal = function (categoria, anio){
             this.tercero = "";
     }
 };
-const InternalSetMeAux = (faseFinal) => {
-    faseFinal.semis.push(new Match("Ganador de A", "Ganador de B"));
-    faseFinal.semis.push(new Match("Ganador de C", "Ganador de D"));
-
-    faseFinal.final = new Match("Ganador de A", "Ganador de B");
-}
 
 const ControlInputsDeGoles = (jsonFaseFinal) => {
     ControlPartidos(jsonFaseFinal.cuartos);

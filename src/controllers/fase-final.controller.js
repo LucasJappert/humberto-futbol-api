@@ -6,11 +6,21 @@ const { FaseFinal, ControlInputsDeGoles} = require("../models/fase-final.model")
 
 
 exports.getFaseFinal = async (req, res) => {
-    const {anio, categoria} = req.params;
+    const {anio, categoria, tipoCopa} = req.params;
+    console.log(req.params);
+    if(!(anio && categoria && tipoCopa)){
+        ObjectResult.SendBadRequest(res, {
+            message: "Invalid parameters!",
+            errors: errors.array()
+        });
+        return;
+    }
+
     let result = null;
 
+    const Copa = tipoCopa == "Oro" ? "CopaOro" : "CopaPlata";
     //TODO: Almacenar en cache
-    result = FileManager.GetFile(`${FileManager.ABSOLUTE_PATH_JSONS}/fase-finales/${anio}-${categoria}.json`);
+    result = FileManager.GetFile(`${FileManager.ABSOLUTE_PATH_JSONS}/fase-finales/${Copa}-${anio}-${categoria}.json`);
 
     if (result == null){
         ObjectResult.SendNotFound(res, { message: `Json no encontrado para el año:${anio} y categría:${categoria}` });
@@ -24,22 +34,24 @@ exports.getFaseFinal = async (req, res) => {
 exports.updateFaseFinal = async (req, res) => {
     try {
         const errors = validationResult(req);
-        if (!errors.isEmpty()) {
+        const {anio, categoria} = req.params;
+        if (!errors.isEmpty() || !(anio && categoria)) {
             ObjectResult.SendBadRequest(res, {
                 message: "Invalid parameters!",
                 errors: errors.array()
             });
             return;
         }
-        const {anio, categoria} = req.params;
+        const { data } = req.body;
 
+        const Copa = data.tipoCopa == "Oro" ? "CopaOro" : "CopaPlata";
         /** @type {FaseFinal} */
         let currentFile = null;
-        const originalFileName = `${FileManager.ABSOLUTE_PATH_JSONS}/fase-finales/${anio}-${categoria}.json`;
+        const originalFileName = `${FileManager.ABSOLUTE_PATH_JSONS}/fase-finales/${Copa}-${anio}-${categoria}.json`;
         try{
             currentFile = FileManager.GetFile(originalFileName);
             //Save backup
-            const absoluteFilePath = `${FileManager.ABSOLUTE_PATH_JSONS}/fase-finales/backup/${anio}-${categoria}_${Date.now()}.json`;
+            const absoluteFilePath = `${FileManager.ABSOLUTE_PATH_JSONS}/fase-finales/backup/${Copa}-${anio}-${categoria}_${Date.now()}.json`;
             FileManager.WriteFile(absoluteFilePath, currentFile);
         }catch(error){
             console.log(error);
@@ -50,10 +62,9 @@ exports.updateFaseFinal = async (req, res) => {
             return;
         }
 
-        const { data } = req.body;
-        let newFaseFinal = new FaseFinal(categoria, anio);
+        let newFaseFinal = new FaseFinal(categoria, anio, data.tipoCopa);
         newFaseFinal.SetMeFromData(data);
-        let localFaseFinal = new FaseFinal(categoria, anio);
+        let localFaseFinal = new FaseFinal(categoria, anio, data.tipoCopa);
         localFaseFinal.SetMeFromData(currentFile);
 
 

@@ -2,6 +2,7 @@ const { ObjectResult } = require('../helpers/objectResult');
 const { body, validationResult } = require('express-validator');
 const FileManager = require("../services/fileManager.service");
 const FaseFinales = require("../services/fase-finales.services");
+const TipoCopa = require('../utils/enums/tipo-copa.enum');
 
 
 exports.getFaseGrupos = async (req, res) => {
@@ -53,7 +54,17 @@ exports.updateZona = async (req, res) => {
         currentFile[index] = zona;
         FileManager.WriteFile(originalFileName, currentFile);
 
-        FaseFinales.TryGenerateJson(currentFile, anio, categoria);
+        //Intento generar json para copa Oro y Playa
+        const resultFaseFinalCopaOro = FaseFinales.TryGenerateJson(currentFile, anio, categoria, TipoCopa.Oro);
+        if(resultFaseFinalCopaOro){
+            const originalFileName = `${FileManager.ABSOLUTE_PATH_JSONS}/fase-finales/CopaOro-${anio}-${categoria}.json`;
+            FileManager.WriteFile(originalFileName, resultFaseFinalCopaOro);
+        }
+        const resultFaseFinalCopaPlata = FaseFinales.TryGenerateJson(currentFile, anio, categoria, TipoCopa.Plata);
+        if(resultFaseFinalCopaPlata){
+            const originalFileName = `${FileManager.ABSOLUTE_PATH_JSONS}/fase-finales/CopaPlata-${anio}-${categoria}.json`;
+            FileManager.WriteFile(originalFileName, resultFaseFinalCopaPlata);
+        }
 
         ObjectResult.SendOk(res, { message: "Grupo actualizado con éxito!"});
     } catch (error) {
@@ -64,13 +75,6 @@ exports.updateZona = async (req, res) => {
 
 exports.validate = (method) => {
     switch (method) {
-        // case "updateFaseGrupos": {
-        //     return [
-        //         body("id", "id doesn't exists").exists(),
-        //         body("categoria", "categoria doesn't exists").exists(),
-        //         body("arrayGrupos", "arrayGrupos doesn't exists").exists()
-        //     ]
-        // }
         case "update-zona": {
             return [
                 body("index", "index doesn't exists").exists().isNumeric(),
