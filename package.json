@@ -4,8 +4,8 @@
   "main": "src/server.js",
   "scripts": {
     "dev": "nodemon src/server.js | bunyan",
-    "tests": "jest --verbose --silent",
-    "tests:watch": "npm run test -- --watch",
+    "tests": "jest --verbose",
+    "tests:watch": "npm run tests -- --watch",
     "build": "babel src --out-dir dist",
     "start": "node src/server.js"
   },
@@ -13,7 +13,9 @@
   "author": "Lucas Jappert",
   "license": "ISC",
   "nodemonConfig": {
-    "ignore": ["**/json/**"]
+    "ignore": [
+      "**/json/**"
+    ]
   },
   "dependencies": {
     "bunyan": "^1.8.15",
