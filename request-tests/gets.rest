@@ -8,7 +8,7 @@ Content-Type: application/json
 
 ##Para crear las zonas
 ###
-GET http://localhost:2000/api/info-torneo/create/2022/2015
+GET http://localhost:2000/api/info-torneo/create/2022/2012
 Content-Type: application/json
 
 ###

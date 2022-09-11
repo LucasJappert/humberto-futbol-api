@@ -40,6 +40,9 @@ exports.createZona = async (req, res) => {
         }
         zonas[numeroZona].push(equipo);
     });
+    Object.values(zonas).forEach(zona => {
+        zona.sort((a, b) => a.numeroSorteo > b.numeroSorteo ? 1 : -1);
+    });
     console.log(zonas);
 
 
