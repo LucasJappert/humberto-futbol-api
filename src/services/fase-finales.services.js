@@ -29,6 +29,19 @@ FaseFinales.TryGenerateJson = (jsonFaseZonas, anio, categoria, tipoCopa) => {
 
     return null;
 }
+FaseFinales.TryInitializeJson = (anio, categoria, tipoCopa, teams) => {
+
+    const CantidadZonasPermitidas = [8, 4];
+    if(CantidadZonasPermitidas.includes(teams.length)){
+        let faseFinal = new FaseFinal(categoria, anio, tipoCopa);
+        faseFinal.SetMe(teams);
+
+        ControlInputsDeGoles(faseFinal);
+        return faseFinal;
+    }
+
+    return null;
+};
 
 const OrdenZona = (zona1, zona2) => {
     if(zona1.Ptos == zona2.Ptos){
@@ -73,10 +86,14 @@ const GetEquiposCopaOro = (positionsByGroups) => {
     let teams = [];
     if(positionsByGroups.length == 4){
         teams = [
-            positionsByGroups[0][0].Nombre, positionsByGroups[1][1].Nombre,
-            positionsByGroups[1][0].Nombre, positionsByGroups[0][1].Nombre,
-            positionsByGroups[2][0].Nombre, positionsByGroups[3][1].Nombre,
-            positionsByGroups[3][0].Nombre, positionsByGroups[2][1].Nombre
+            positionsByGroups[0][0].Nombre, //1° grupo A
+            positionsByGroups[1][1].Nombre, //2° grupo B
+            positionsByGroups[1][0].Nombre, //1° grupo B
+            positionsByGroups[0][1].Nombre, //2° grupo A
+            positionsByGroups[2][0].Nombre, //1° grupo C
+            positionsByGroups[3][1].Nombre, //2° grupo D
+            positionsByGroups[3][0].Nombre, //1° grupo D
+            positionsByGroups[2][1].Nombre  //2° grupo C
         ];
     }
     if(positionsByGroups.length == 3){
