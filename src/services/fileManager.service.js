@@ -1,5 +1,6 @@
 const fs = require('fs');
 
+console.log(process.cwd());
 module.exports.ABSOLUTE_PATH_JSONS = `${process.cwd()}/src/json`;
 
 module.exports.GetFile = (absoluteFilePath) => {
