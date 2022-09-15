@@ -4,7 +4,7 @@ const express = require("express");
 const app = express();
 const pkg = require("../../package.json");
 
-app.set("port", process.env.PORT || 3000);
+app.set("port", process.env.PORT || 2000);
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(logger);

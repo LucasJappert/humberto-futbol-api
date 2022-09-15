@@ -5,3 +5,8 @@ GET http://localhost:2000/api/fase-grupos/2022/2010
 GET http://localhost:2000/api/fase-grupos/2021/2010
 ###
 GET http://localhost:2000/api/fase-final/2022/2013
+
+
+###
+GET http://137.184.42.29:2000/api/fase-final/2022/2013
+

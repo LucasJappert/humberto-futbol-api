@@ -14,3 +14,7 @@ Content-Type: application/json
 ###
 GET http://localhost:2000/api/fase-grupos/2022/2013
 Content-Type: application/json
+
+
+###
+GET http://137.184.42.29:2000/api/fase-grupos/2022/2013
