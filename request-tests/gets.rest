@@ -18,3 +18,13 @@ Content-Type: application/json
 
 ###
 GET https://humbertito.online/api/fase-grupos/2022/2013
+
+
+##Para crear no competitivo 2016
+###
+GET http://localhost:2000/api/no-competitivo/create/2022/2016
+Content-Type: application/json
+
+###
+GET http://localhost:2000/api/no-competitivo/2022/2016
+Content-Type: application/json
