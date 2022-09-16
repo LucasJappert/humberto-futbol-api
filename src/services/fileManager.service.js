@@ -1,8 +1,7 @@
 const fs = require('fs');
 
-console.log(process.cwd());
-console.log(__dirname);
-module.exports.ABSOLUTE_PATH_JSONS = `${process.cwd()}/src/json`;
+module.exports.ABSOLUTE_PATH_JSONS = `${__dirname.replace("services", "")}json`;
+console.log(`JSONs path --> ${this.ABSOLUTE_PATH_JSONS}`);
 
 module.exports.GetFile = (absoluteFilePath) => {
     try {
@@ -17,7 +16,7 @@ module.exports.GetFile = (absoluteFilePath) => {
 
 module.exports.WriteFile = (absoluteFileName, json) => {
     let stringify = JSON.stringify(json);
-    //CheckAbsolutePathExistence(absoluteFileName);
+    CheckAbsolutePathExistence(absoluteFileName);
     fs.writeFileSync(absoluteFileName, stringify, { encoding: 'utf8' });
 }
 
