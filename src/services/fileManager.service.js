@@ -15,6 +15,7 @@ module.exports.GetFile = (absoluteFilePath) => {
 }
 
 module.exports.WriteFile = (absoluteFileName, json) => {
+    console.log(`WriteFile path --> ${absoluteFileName}`);
     let stringify = JSON.stringify(json);
     CheckAbsolutePathExistence(absoluteFileName);
     fs.writeFileSync(absoluteFileName, stringify, { encoding: 'utf8' });
