@@ -23,11 +23,14 @@ module.exports.WriteFile = (absoluteFileName, json) => {
 
 const CheckAbsolutePathExistence = (absoluteFileNamePath) => {
     absoluteFileNamePath = absoluteFileNamePath.replaceAll("\\", "/");
-    let folders = absoluteFileNamePath.split("/");
+    let folders = absoluteFileNamePath.split("/").filter(x => x != "");
     folders = folders.filter(f => !f.includes("."));
     let auxPath = "";
     for (let folder of folders){
         auxPath += folder;
+        if(auxPath == "")
+            continue;
+
         if (!fs.existsSync(auxPath)){
             console.log(`Creando carpeta --> ${auxPath}`);
             fs.mkdirSync(auxPath);
