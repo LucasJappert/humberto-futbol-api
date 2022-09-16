@@ -28,7 +28,10 @@ const CheckAbsolutePathExistence = (absoluteFileNamePath) => {
     let auxPath = "";
     for (let folder of folders){
         auxPath += folder;
-        !fs.existsSync(auxPath) && fs.mkdirSync(auxPath);
+        if (!fs.existsSync(auxPath)){
+            console.log(`Creando carpeta --> ${auxPath}`);
+            fs.mkdirSync(auxPath);
+        }
         auxPath += "/";
     }
 }
