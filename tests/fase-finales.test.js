@@ -32,7 +32,7 @@ describe("--------> FASE FINALES SERVICES TESTS", () => {
 
 
 
-  xtest("INICIALIZA TODOS LOS JSON", () => {
+  test("INICIALIZA TODOS LOS JSON", () => {
     const teams1 = [
         "1° grupo A",
         "1° tercero",
@@ -85,7 +85,7 @@ describe("--------> FASE FINALES SERVICES TESTS", () => {
     InitializeJson(2022, 2014, TipoCopa.Oro, teams3);
     InitializeJson(2022, 2014, TipoCopa.Plata, teams4);
     InitializeJson(2022, 2015, TipoCopa.Oro, teams3);
-    InitializeJson(2022, 2015, TipoCopa.Plata, teams4);
+    InitializeJson(2022, 2015, TipoCopa.Plata, teams2);
   });
 
 })

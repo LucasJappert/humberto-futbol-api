@@ -1,13 +1,1 @@
-{"anio":2022,"categoria":2015,"cuartos":[{"Fecha":"26/03/2022 17:30","Cancha":"4","NombreEquipo1":"3° grupo A","GolesEquipo1":0,
-"GolesPorPenalesEquipo1":0,"NombreEquipo2":"4° grupo B","GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false},
-{"Fecha":"26/03/2022 17:30","Cancha":"4","NombreEquipo1":"3° grupo D","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,
-"NombreEquipo2":"4° grupo C","GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false},{"Fecha":"26/03/2022 17:30",
-"Cancha":"4","NombreEquipo1":"3° grupo B","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,"NombreEquipo2":"4° grupo A",
-"GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false},{"Fecha":"26/03/2022 17:30","Cancha":"4","NombreEquipo1":"3° grupo C",
-"GolesEquipo1":0,"GolesPorPenalesEquipo1":0,"NombreEquipo2":"4° grupo D","GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false}],
-"semis":[{"Fecha":"26/03/2022 17:30","Cancha":"4","NombreEquipo1":"Ganador de A","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,
-"NombreEquipo2":"Ganador de B","GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false},{"Fecha":"26/03/2022 17:30",
-"Cancha":"4","NombreEquipo1":"Ganador de C","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,"NombreEquipo2":"Ganador de D",
-"GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false}],"final":{"Fecha":"26/03/2022 17:30","Cancha":"4",
-"NombreEquipo1":"Ganador de A","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,"NombreEquipo2":"Ganador de B",
-"GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false},"tercero":"","tipoCopa":"Plata"}
+{"anio":2022,"categoria":2015,"cuartos":[],"semis":[{"Fecha":"18/09/2022 12:00","Cancha":"4","NombreEquipo1":"3° tercero","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,"NombreEquipo2":"4° grupo A","GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false},{"Fecha":"18/09/2022 12:45","Cancha":"4","NombreEquipo1":"4° grupo B","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,"NombreEquipo2":"4° grupo C","GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false}],"final":{"Fecha":"18/09/2022 15:00","Cancha":"4","NombreEquipo1":"Ganador de A","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,"NombreEquipo2":"Ganador de B","GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false},"tercero":"","tipoCopa":"Plata"}
