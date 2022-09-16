@@ -6,6 +6,7 @@ const FaseFinal = function (categoria, anio, tipoCopa){
     this.semis = [];
     this.final = {};
     this.tercero = "";
+    this.cuarto = "";
     this.tipoCopa = tipoCopa;
     this.SetMe = function (teams) {
         if(teams.length == 8){
@@ -87,9 +88,15 @@ const FaseFinal = function (categoria, anio, tipoCopa){
             const finalWinnerName = GetWinnerName(this.final);
             const currentMatch = this.semis.find(x => x.NombreEquipo1 == finalWinnerName || x.NombreEquipo2 == finalWinnerName);
             this.tercero = currentMatch != null ? GetLoserName(currentMatch) : "";
+
+            const finalLoserName = GetLoserName(this.final);
+            const semiMatch = this.semis.find(x => x.NombreEquipo1 == finalLoserName || x.NombreEquipo2 == finalLoserName);
+            this.cuarto = semiMatch != null ? GetLoserName(semiMatch) : "";
         }
-        else
+        else{
             this.tercero = "";
+            this.cuarto = "";
+        }
     }
 };
 

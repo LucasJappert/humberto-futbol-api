@@ -47,4 +47,11 @@ const PreSetEquipo2 = (match, nombreEquipo2) => {
     match.GolesPorPenalesEquipo2 = null;
 }
 
-module.exports = { Match, GetWinnerName, GetLoserName, PreSetEquipo1, PreSetEquipo2 };
+const GenerateMatch = (teamName1, teamName2, cancha = 5, fecha = "17/09/2022 12:00") => {
+    let match = new Match(teamName1, teamName2);
+    match.Cancha = cancha;
+    match.Fecha = fecha;
+    return match;
+};
+
+module.exports = { Match, GetWinnerName, GetLoserName, PreSetEquipo1, PreSetEquipo2, GenerateMatch };
