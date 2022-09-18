@@ -1,14 +1,1 @@
-{"anio":2022,"categoria":2013,"cuartos":[{"Fecha":"18/09/2022 10:40","Cancha":"2","NombreEquipo1":"1° grupo A","GolesEquipo1":0,
-"GolesPorPenalesEquipo1":0,"NombreEquipo2":"2° grupo B","GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false},
-{"Fecha":"18/09/2022 11:20","Cancha":"2","NombreEquipo1":"1° grupo D","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,
-"NombreEquipo2":"2° grupo C","GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false},
-{"Fecha":"18/09/2022 12:00","Cancha":"2","NombreEquipo1":"1° grupo B","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,
-"NombreEquipo2":"2° grupo A","GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false},{"Fecha":"18/09/2022 12:40",
-"Cancha":"2","NombreEquipo1":"1° grupo C","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,"NombreEquipo2":"2° grupo D",
-"GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false}],"semis":[{"Fecha":"18/09/2022 14:40","Cancha":"2",
-"NombreEquipo1":"Ganador de A","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,"NombreEquipo2":"Ganador de B",
-"GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false},{"Fecha":"18/09/2022 15:20","Cancha":"2",
-"NombreEquipo1":"Ganador de C","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,"NombreEquipo2":"Ganador de D",
-"GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false}],"final":{"Fecha":"18/09/2022 17:00",
-"Cancha":"2","NombreEquipo1":"Ganador de A","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,
-"NombreEquipo2":"Ganador de B","GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false},"tercero":"","tipoCopa":"Oro"}
+{"anio":"2022","categoria":"2013","cuartos":[{"Fecha":"18/09/2022 10:40","Cancha":"2","NombreEquipo1":"CHICAGO JUNIORS","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,"NombreEquipo2":"MORENO LEHMANN","GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false},{"Fecha":"18/09/2022 11:20","Cancha":"2","NombreEquipo1":"ATLÉTICO DE RAFAELA","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,"NombreEquipo2":"ARGENTINO HUMBERTO","GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false},{"Fecha":"18/09/2022 12:00","Cancha":"2","NombreEquipo1":"DEP. ALDAO","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,"NombreEquipo2":"EUSEBIA","GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false},{"Fecha":"18/09/2022 12:40","Cancha":"2","NombreEquipo1":"CULTURAL LA PARA","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,"NombreEquipo2":"9 DE JULIO","GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false}],"semis":[{"Fecha":"18/09/2022 14:40","Cancha":"2","NombreEquipo1":"Ganador de A","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,"NombreEquipo2":"Ganador de B","GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false},{"Fecha":"18/09/2022 15:20","Cancha":"2","NombreEquipo1":"Ganador de C","GolesEquipo1":0,"GolesPorPenalesEquipo1":0,"NombreEquipo2":"Ganador de D","GolesEquipo2":0,"GolesPorPenalesEquipo2":0,"Estado":false}],"final":{"Fecha":"18/09/2022 17:00","Cancha":"2","NombreEquipo1":"Ganador de A","GolesEquipo1":0,"GolesPorPenalesEquipo1":null,"NombreEquipo2":"Ganador de B","GolesEquipo2":0,"GolesPorPenalesEquipo2":null,"Estado":false},"tercero":"","cuarto":"","tipoCopa":"Oro"}
