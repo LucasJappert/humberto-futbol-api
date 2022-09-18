@@ -39,12 +39,12 @@ const GetLoserName = (match) => {
 const PreSetEquipo1 = (match, nombreEquipo1) => {
     match.NombreEquipo1 = nombreEquipo1;
     match.GolesEquipo1 = 0;
-    match.GolesPorPenalesEquipo1 = null;
+    match.GolesPorPenalesEquipo1 = 0;
 }
 const PreSetEquipo2 = (match, nombreEquipo2) => {
     match.NombreEquipo2 = nombreEquipo2;
     match.GolesEquipo2 = 0;
-    match.GolesPorPenalesEquipo2 = null;
+    match.GolesPorPenalesEquipo2 = 0;
 }
 
 const GenerateMatch = (teamName1, teamName2, cancha = 5, fecha = "17/09/2022 12:00") => {

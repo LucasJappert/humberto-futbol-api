@@ -1,5 +1,3 @@
 node_modules
 logs
-src/json/backup
-src/json/backup-zonas
-src/json/fase-finales/backup
+src/json

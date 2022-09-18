@@ -67,11 +67,14 @@ exports.updateFaseFinal = async (req, res) => {
         let localFaseFinal = new FaseFinal(categoria, anio, data.tipoCopa);
         localFaseFinal.SetMeFromData(currentFile);
 
-
+        //Controlamos equipos
         if(JSON.stringify(localFaseFinal.cuartos) != JSON.stringify(newFaseFinal.cuartos)){ //Chequeo finalizacion de cuartos
+            localFaseFinal.semis = newFaseFinal.semis;//Para guardar fecha y cancha
+            localFaseFinal.final = newFaseFinal.final;//Para guardar fecha y cancha
             localFaseFinal.SetCuartos(newFaseFinal.cuartos);
         }
         else if(JSON.stringify(localFaseFinal.semis) != JSON.stringify(newFaseFinal.semis)){ //Chequeo finalizacion de semis
+            localFaseFinal.final = newFaseFinal.final;//Para guardar fecha y cancha
             localFaseFinal.SetSemis(newFaseFinal.semis);
         }
         else if(JSON.stringify(localFaseFinal.final) != JSON.stringify(newFaseFinal.final)){ //Chequeo finalizacion de final
