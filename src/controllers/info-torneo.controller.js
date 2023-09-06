@@ -17,14 +17,16 @@ exports.getByCategoria = async (req, res) => {
 
 exports.createZona = async (req, res) => {
     const {anio, categoria} = req.params;
-
+    
     let equiposDeUnaCategoria = Equipos.GetEquiposByCategoria(anio, categoria);
+    console.log(equiposDeUnaCategoria.length)
     if(equiposDeUnaCategoria.length % 4 != 0 ){
         ObjectResult.SendNotFound(res, {});//TODO: testear con una categoria que tenga 13 equipos.
         return;
     }
 
     const equiposSinNumeroSorteo = equiposDeUnaCategoria.find(x => x.numeroSorteo == 0);
+    console.log(equiposSinNumeroSorteo)
     if(equiposSinNumeroSorteo){
         ObjectResult.SendNotFound(res, {});
         return;

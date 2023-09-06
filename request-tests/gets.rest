@@ -1,23 +1,23 @@
 
 ###
-GET http://localhost:2000/api/equipos/2022
+GET http://localhost:2000/api/equipos/2023
 Content-Type: application/json
 ###
-GET http://localhost:2000/api/info-torneo/2022/2012
+GET http://localhost:2000/api/info-torneo/2023/2015
 Content-Type: application/json
 
 ##Para crear las zonas
 ###
-GET http://localhost:2000/api/info-torneo/create/2022/2012
+GET http://localhost:2000/api/info-torneo/create/2023/2013
 Content-Type: application/json
 
 ###
-GET http://localhost:2000/api/fase-grupos/2022/2013
+GET http://localhost:2000/api/fase-grupos/2023/2013
 Content-Type: application/json
 
 
 ###
-GET https://humbertito.online/api/fase-grupos/2022/2013
+GET https://humbertito.online/api/fase-grupos/2023/2014
 
 
 ##Para crear no competitivo 2016

@@ -1,0 +1,440 @@
+{
+    "equipos": [
+        {
+            "nombre": "9 DE JULIO RAFAELA",
+            "categorias":[
+                {
+                    "año": 2015,
+                    "numeroSorteo": 5
+                },
+                {
+                    "año": 2016,
+                    "numeroSorteo": 6
+                }
+            ]
+        },
+        {
+            "nombre": "ARGENTINO  BLANCO",
+            "categorias":[
+                {
+                    "año": 2014,
+                    "numeroSorteo": 1
+                },
+                {
+                    "año": 2016,
+                    "numeroSorteo": 3
+                }
+            ]
+        },
+        {
+            "nombre": "ARGENTINO  CELESTE",
+            "categorias":[
+                {
+                    "año": 2013,
+                    "numeroSorteo": 1
+                },
+                {
+                    "año": 2014,
+                    "numeroSorteo": 3
+                },
+                {
+                    "año": 2015,
+                    "numeroSorteo": 1
+                },
+                {
+                    "año": 2016,
+                    "numeroSorteo": 1
+                }
+            ]
+        },
+        {
+            "nombre": "ATLÉTICO EUSEBIA",
+            "categorias":[
+                {
+                    "año": 2016,
+                    "numeroSorteo": 13
+                }
+            ]
+        },
+        {
+            "nombre": "ATLÉTICO PILAR",
+            "categorias":[
+                {
+                    "año": 2013,
+                    "numeroSorteo": 7
+                },
+                {
+                    "año": 2016,
+                    "numeroSorteo": 11
+                }
+            ]
+        },
+        {
+            "nombre": "ATLÉTICO DE RAFAELA",
+            "categorias":[
+                {
+                    "año": 2014,
+                    "numeroSorteo": 4
+                },
+                {
+                    "año": 2016,
+                    "numeroSorteo": 4
+                }
+            ]
+        },
+        {
+            "nombre": "Bº 9 DE JULIO SUNCHALES",
+            "categorias":[
+                {
+                    "año": 2014,
+                    "numeroSorteo": 16
+                },
+                {
+                    "año": 2015,
+                    "numeroSorteo": 13
+                },
+                {
+                    "año": 2016,
+                    "numeroSorteo": 6
+                }
+            ]
+        },
+        {
+            "nombre": "BARRIO MORENO SUNCHALES",
+            "categorias":[
+                {
+                    "año": 2013,
+                    "numeroSorteo": 14
+                },
+                {
+                    "año": 2015,
+                    "numeroSorteo": 15
+                }
+            ]
+        },
+        {
+            "nombre": "BEN HUR",
+            "categorias":[
+                {
+                    "año": 2013,
+                    "numeroSorteo": 5
+                },
+                {
+                    "año": 2016,
+                    "numeroSorteo": 2
+                }
+            ]
+        },
+        {
+            "nombre": "C.R. ELISA",
+            "categorias":[
+                {
+                    "año": 2015,
+                    "numeroSorteo": 12
+                },
+                {
+                    "año": 2016,
+                    "numeroSorteo": 15
+                }
+            ]
+        },
+        {
+            "nombre": "C.S. ALTOS DE CHIPIÓN",
+            "categorias":[
+                {
+                    "año": 2013,
+                    "numeroSorteo": 8
+                }
+            ]
+        },
+        {
+            "nombre": "CALCHAQUI FBC",
+            "categorias":[
+                {
+                    "año": 2015,
+                    "numeroSorteo": 14  
+                }
+            ]
+        },
+        {
+            "nombre": "COLO FÚTBOL FRONTERA",
+            "categorias":[
+                {
+                    "año": 2013,
+                    "numeroSorteo": 13
+                }
+            ]
+        },
+        {
+            "nombre": "COLÓN DE SANTA FE",
+            "categorias":[
+                {
+                    "año": 2013,
+                    "numeroSorteo": 4
+                },
+                {
+                    "año": 2014,
+                    "numeroSorteo": 2
+                },
+                {
+                    "año": 2015,
+                    "numeroSorteo": 3
+                }
+            ]
+        },
+        {
+            "nombre": "DEP. ALDAO",
+            "categorias":[
+                {
+                    "año": 2015,
+                    "numeroSorteo": 8
+                }
+            ]
+        },
+        {
+            "nombre": "ESC. SAN JOSÉ SAN CRISTÓBAL",
+            "categorias":[
+                {
+                    "año": 2014,
+                    "numeroSorteo": 12
+                }
+            ]
+        },{
+            "nombre": "FERRO DHO SAN CRISTOBAL",
+            "categorias":[
+                {
+                    "año": 2014,
+                    "numeroSorteo": 9
+                },
+                {
+                    "año": 2015,
+                    "numeroSorteo": 10
+                }
+            ]
+        },
+        {
+            "nombre": "FERRO RAFAELA",
+            "categorias":[
+                {
+                    "año": 2016,
+                    "numeroSorteo": 15
+                }
+            ]
+        },
+        {
+            "nombre": "FLORIDA CLUCELLAS",
+            "categorias":[
+                {
+                    "año": 2014,
+                    "numeroSorteo": 6
+                }
+            ]
+        },
+        {
+            "nombre": "INDEP. ATALIVA",
+            "categorias":[
+                {
+                    "año": 2014,
+                    "numeroSorteo": 7
+                },
+                {
+                    "año": 2015,
+                    "numeroSorteo": 7
+                },
+                {
+                    "año": 2016,
+                    "numeroSorteo": 9
+                }
+            ]
+        },
+        {
+            "nombre": "INDEPENDIENTE BALNEARIA",
+            "categorias":[
+                {
+                    "año": 2013,
+                    "numeroSorteo": 9
+                },
+                {
+                    "año": 2014,
+                    "numeroSorteo": 14
+                }
+            ]
+        },
+        {
+            "nombre": "INDEP. SAN CRISTOBAL",
+            "categorias":[
+                {
+                    "año": 2015,
+                    "numeroSorteo": 11
+                }
+            ]
+        },
+        {
+            "nombre": "LA BANDA FC RAFAELA",
+            "categorias":[
+                {
+                    "año": 2014,
+                    "numeroSorteo": 15
+                }
+            ]
+        },
+        {
+            "nombre": "LIBERTAD SUNCHALES",
+            "categorias":[
+                {
+                    "año": 2013,
+                    "numeroSorteo": 3
+                },
+                {
+                    "año": 2015,
+                    "numeroSorteo": 2
+                },
+                {
+                    "año": 2016,
+                    "numeroSorteo": 7
+                }
+            ]
+        },
+        {
+            "nombre": "MORENO LEHMANN",
+            "categorias":[
+                {
+                    "año": 2014,
+                    "numeroSorteo": 5
+                }
+            ]
+        },
+        {
+            "nombre": "PEÑAROL RAFAELA",
+            "categorias":[
+                {
+                    "año": 2013,
+                    "numeroSorteo": 6
+                },
+                {
+                    "año": 2015,
+                    "numeroSorteo": 6
+                },
+                {
+                    "año": 2016,
+                    "numeroSorteo": 12
+                }
+            ]
+        },
+        {
+            "nombre": "QUILMES RAFAELA",
+            "categorias":[
+                {
+                    "año": 2013,
+                    "numeroSorteo": 11
+                }
+            ]
+        },
+        {
+            "nombre": "SAN MARTIN PROGRESO",
+            "categorias":[
+                {
+                    "año": 2014,
+                    "numeroSorteo": 13
+                },
+                {
+                    "año": 2015,
+                    "numeroSorteo": 9
+                },
+                {
+                    "año": 2016,
+                    "numeroSorteo": 14
+                }
+            ]
+        },
+        {
+            "nombre": "SPORTIVO NORTE RAFAELA",
+            "categorias":[
+                {
+                    "año": 2013,
+                    "numeroSorteo": 10
+                }
+            ]
+        },
+        {
+            "nombre": "TIRO F MOISES VILLE",
+            "categorias":[
+                {
+                    "año": 2016,
+                    "numeroSorteo": 10
+                }
+            ]
+        },
+        {
+            "nombre": "TIRO F MOISES VILLE AZUL",
+            "categorias":[
+                {
+                    "año": 2014,
+                    "numeroSorteo": 10
+                }
+            ]
+        },
+        {
+            "nombre": "TIRO F MOISES VILLE BLANCO",
+            "categorias":[
+                {
+                    "año": 2014,
+                    "numeroSorteo": 11
+                }
+            ]
+        },
+        {
+            "nombre": "UNIÓN DE SUNCHALES ",
+            "categorias":[
+                {
+                    "año": 2013,
+                    "numeroSorteo": 2
+                },
+                {
+                    "año": 2014,
+                    "numeroSorteo": 8
+                },
+                {
+                    "año": 2015,
+                    "numeroSorteo": 4
+                },
+                {
+                    "año": 2016,
+                    "numeroSorteo": 8
+                }
+            ]
+        },
+        {
+            "nombre": "VETERANITOS TOSTADO",
+            "categorias":[
+                {
+                    "año": 2013,
+                    "numeroSorteo": 12
+                },
+                {
+                    "año": 2015,
+                    "numeroSorteo": 16
+                }
+            ]
+        },
+        {
+            "nombre": "INTERZONAL",
+            "categorias":[
+                {
+                    "año": 2013,
+                    "numeroSorteo": 15
+                }
+            ]
+        }
+        ,
+        {
+            "nombre": "INTERZONAL 2",
+            "categorias":[
+                {
+                    "año": 2013,
+                    "numeroSorteo": 16
+                }
+            ]
+        }
+     ]
+ }
