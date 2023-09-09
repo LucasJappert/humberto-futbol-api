@@ -1,8 +1,19 @@
 const dotenv = require('dotenv').config();
 const logger = require('../middlewares/logger');
 const express = require("express");
+const cors = require('cors'); // Importa el middleware CORS
 const app = express();
 const pkg = require("../../package.json");
+
+// Configura CORS para permitir solicitudes desde el dominio de tu frontend
+const corsOptions = {
+    origin: 'https://humbertito.com', // Reemplaza con la URL de tu frontend
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+    optionsSuccessStatus: 204,
+};
+
+app.use(cors(corsOptions)); // Usa el middleware CORS
 
 app.set("port", process.env.PORT || 2000);
 app.use(express.urlencoded({ extended: true }));
