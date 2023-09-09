@@ -7,7 +7,7 @@ const pkg = require("../../package.json");
 
 // Configura CORS para permitir solicitudes desde el dominio de tu frontend
 const corsOptions = {
-    origin: 'https://humbertito.com', // Reemplaza con la URL de tu frontend
+    origin: '*', // Reemplaza con la URL de tu frontend
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     optionsSuccessStatus: 204,
