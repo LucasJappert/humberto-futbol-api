@@ -10,18 +10,40 @@ const InfoEquipo = function (nombre){
     this.Ptos = 0;
 
     this.setData = (puntosGanados, golesAFavor, golesEnContra) => {
-        this.PJ += 1;
-        if(puntosGanados == 3)
-            this.PG += 1;
-        if(puntosGanados == 1)
-            this.PE += 1;
-        if(puntosGanados == 0)
-            this.PP += 1;
-        this.GF += Number(golesAFavor);
-        this.GC += Number(golesEnContra);
-        this.DG = this.GF - this.GC;
-        this.Ptos += puntosGanados;
-    }
-}
+         this.PJ += 1;
+         if(puntosGanados == 3)
+             this.PG += 1;
+         if(puntosGanados == 1)
+             this.PE += 1;
+         if(puntosGanados == 0)
+             this.PP += 1;
+         this.GF += Number(golesAFavor);
+         this.GC += Number(golesEnContra);
+         this.DG = this.GF - this.GC;
+         this.Ptos += puntosGanados;
+     }
 
+    // this.setData = (puntosGanados, golesAFavor, golesEnContra) => {
+    //     this.PJ += 1;
+    //     if (this.Nombre.includes("INTERZONAL")) {
+    //         // El equipo con "interzonal" en su nombre no suma nada
+    //         return;
+    //     } else {
+    //         // El equipo contrario suma puntos y estadísticas
+    //         if (puntosGanados === 3) {
+    //             this.PG += 1;
+    //             if(puntosGanados == 3)
+    //                 this.PG += 1;
+    //              if(puntosGanados == 1)
+    //                 this.PE += 1;
+    //              if(puntosGanados == 0)
+    //                 this.PP += 1;
+    //         }
+    //         this.GF += Number(golesAFavor);
+    //         this.GC += Number(golesEnContra);
+    //         this.DG = this.GF - this.GC;
+    //         this.Ptos += puntosGanados;
+    //     }
+    // }
+}
 module.exports = InfoEquipo;
