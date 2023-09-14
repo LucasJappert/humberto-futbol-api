@@ -22,9 +22,9 @@ GET https://humbertito.online/api/fase-grupos/2023/2014
 
 ##Para crear no competitivo 2016
 ###
-GET http://localhost:2000/api/no-competitivo/create/2022/2016
+GET http://localhost:2000/api/no-competitivo/create/2023/2017
 Content-Type: application/json
 
 ###
-GET http://localhost:2000/api/no-competitivo/2022/2016
+GET http://localhost:2000/api/no-competitivo/2023/2017
 Content-Type: application/json

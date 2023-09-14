@@ -23,6 +23,10 @@
                 {
                     "año": 2016,
                     "numeroSorteo": 3
+                },
+                {
+                    "año": 2017,
+                    "numeroSorteo": 0
                 }
             ]
         },
@@ -44,6 +48,10 @@
                 {
                     "año": 2016,
                     "numeroSorteo": 1
+                },
+                {
+                    "año": 2017,
+                    "numeroSorteo": 0
                 }
             ]
         },
@@ -53,6 +61,10 @@
                 {
                     "año": 2016,
                     "numeroSorteo": 13
+                },
+                {
+                    "año": 2017,
+                    "numeroSorteo": 0
                 }
             ]
         },
@@ -188,6 +200,15 @@
                 {
                     "año": 2015,
                     "numeroSorteo": 8
+                }
+            ]
+        },
+        {
+            "nombre": "DEP. TACURAL",
+            "categorias":[
+                {
+                    "año": 2017,
+                    "numeroSorteo": 0
                 }
             ]
         },
