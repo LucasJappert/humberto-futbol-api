@@ -16,8 +16,10 @@ const FaseFinal = function (categoria, anio, tipoCopa){
             this.cuartos.push(new Match(teams[4], teams[5]));
             this.cuartos.push(new Match(teams[6], teams[7]));
 
-            this.semis.push(new Match("Ganador de A", "Ganador de B"));
-            this.semis.push(new Match("Ganador de C", "Ganador de D"));
+            // this.semis.push(new Match(GetWinnerName(this.cuartos[0]), GetWinnerName(this.cuartos[3])));
+            // this.semis.push(new Match(GetWinnerName(this.cuartos[1]), GetWinnerName(this.cuartos[2])));
+            this.semis.push(new Match("Ganador de A", "Ganador de D"));
+            this.semis.push(new Match("Ganador de C", "Ganador de B"));
 
             this.final = new Match("Ganador de A", "Ganador de B");
         }else if(teams.length == 4){
@@ -56,9 +58,9 @@ const FaseFinal = function (categoria, anio, tipoCopa){
             PreSetEquipo1(this.semis[0], "Ganador de A");
 
         if(this.cuartos[1].Estado == 1)
-            PreSetEquipo2(this.semis[0], GetWinnerName(this.cuartos[1]));
+            PreSetEquipo2(this.semis[1], GetWinnerName(this.cuartos[1]));
         else
-            PreSetEquipo2(this.semis[0], "Ganador de B");
+            PreSetEquipo2(this.semis[1], "Ganador de B");
 
         if(this.cuartos[2].Estado == 1)
             PreSetEquipo1(this.semis[1], GetWinnerName(this.cuartos[2]));
@@ -66,9 +68,9 @@ const FaseFinal = function (categoria, anio, tipoCopa){
             PreSetEquipo1(this.semis[1], "Ganador de C");
 
         if(this.cuartos[3].Estado == 1)
-            PreSetEquipo2(this.semis[1], GetWinnerName(this.cuartos[3]));
+            PreSetEquipo2(this.semis[0], GetWinnerName(this.cuartos[3]));
         else
-            PreSetEquipo2(this.semis[1], "Ganador de D");
+            PreSetEquipo2(this.semis[0], "Ganador de D");
 
     };
     this.TryPreSetFinal = function () {
